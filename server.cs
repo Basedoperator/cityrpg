@@ -1,9 +1,8 @@
-$BR::Gamemode = "Office";
 function serverCmdQExec(%client)
 {
 	if(%client.isSuperAdmin)
 	{
-		exec("Add-ons/GameMode_Office_Insurgency/server.cs");
+		exec("Add-ons/GameMode_CityRPGG5/server.cs");
 		talk("Gamemode executed.");
 	}
 	else
@@ -12,13 +11,6 @@ function serverCmdQExec(%client)
 	}
 }
 
-//package OffIns
-//{
-//	function GameConnection::StartLoad(%this, %client)
-//	{
-//		talk("test");
-//		Parent::StartLoad(%this, %client);
-//	}
-//};
-//activatepackage(OffIns);
+//exec
+exec("Add-ons/GameMode_CityRPG5/scripts/time.cs");
 
